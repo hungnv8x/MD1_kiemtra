@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input id="inputa" type="text">
+<input id="inputb" type="text">
+<button onclick="inDienTich()">Dien Tich</button>
+<h1 id="result"></h1>
+<p id="p"></p>
+<body>
+<script>
+
+    // bai 1 : câu lệnh là
+    alert('Nguyễn Văn Hưng')
+    // bài 2 :
+    let a = +prompt('Nhap vao mot so : ')
+    alert('Binh phuong cua ' + a + ' la : ' + a * a)
+    // bai 3:
+    let a = +document.getElementById('inputa').value;
+    let b = +document.getElementById('inputb').value;
+    let s = a * b;
+
+    function inDienTich() {
+        console.log(a)
+        document.getElementById('result').innerHTML = 'Dien tich = ' + s;
+    }
+
+    //bai 4:
+    //a,
+    let a = document.getElementById('inputa').value;
+    document.getElementById('p').innerHTML = 'Chu vi = ' + 4 * a + '; Dien tich = ' + a * a;
+    //b,
+    let a = document.getElementById('inputa').value;
+    let b = document.getElementById('inputb').value;
+    let luythua = a;
+    for (let i = 1; i < b; i++) {
+        luythua *= a;
+    }
+    document.getElementById('p').innerHTML = 'a^2 = ' + a * a + 'a^b = ' + luythua;
+    //c,
+    let a = +prompt('Nhap a')
+    let b = +prompt('Nhap b')
+    let tong = 0;
+    for (let i = a; i <= b; i++) {
+        tong += i;
+    }
+    //d
+    let nam = +prompt('Nhap nam : ')
+    let kt = Math.floor(nam / 100) + 1;
+    document.getElementById('p').innerHTML = nam + ' la the ki : ' + kt;
+    //c
+    let a = +prompt('Nhap a')
+    let b = +prompt("nhap b")
+    let c = +prompt('Nhap c')
+    if (a**2=b**2+c**2&&b**2=a**2+c**2&&c**2=a**2+b**2){
+
+    }
+</script>
+</body>
+</html>
