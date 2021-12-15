@@ -55,7 +55,15 @@
     let b = +prompt("nhap b")
     let c = +prompt('Nhap c')
     if (a**2=b**2+c**2&&b**2=a**2+c**2&&c**2=a**2+b**2){
-
+        alert('Tam giac vuong')
+    }else if (a=b&&a=c&&b=c){
+        alert('tam giac deu')
+    }else if (a=b||a=c||b=c){
+        alert('tam giac can')
+    }else if (a+b>c&&a+c>b&&b+c>a){
+        alert('la tam giac')
+    }else {
+        alert('khong phai tam giac')
     }
 </script>
 </body>
